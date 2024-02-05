@@ -2,6 +2,7 @@
 #include <string>
 #include <cstring>
 #include "visualizza_classifica.hpp"
+#include "tetris.h"
 using namespace std;
 
 int main(){
