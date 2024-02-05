@@ -60,7 +60,9 @@ int main(){
 
  
     if(strcmp(opzioni[selezione].c_str(), "Nuova partita") == 0){
-        //nuova_partita(); Placeholder per la funzione reale che avvierà la partita
+         Tetris tetr;
+        clear();
+        tetr.GameLoop();
     }
     else if (strcmp(opzioni[selezione].c_str(), "Visualizza classifica") == 0){
         clear();
