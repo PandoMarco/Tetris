@@ -1,18 +1,15 @@
 #include <ncurses.h>
 #include <string>
 #include <cstring>
-#include "visualizza_classifica.hpp"
 #include "tetris.h"
+#include "visualizza_classifica.hpp"
 using namespace std;
 
-int main(){
+void menu(){
    /* AVVIO NCURSES */
     initscr();
     noecho();
     cbreak();
-    curs_set(0);
-    timeout(0);
-    keypad(stdscr, true);
 
     // dimensione dello schermo
     int yMax, xMax;
@@ -64,18 +61,18 @@ int main(){
 
  
     if(strcmp(opzioni[selezione].c_str(), "Nuova partita") == 0){
-         Tetris tetr;
+
         clear();
-        tetr.GameLoop();
+        Tetris tetris;
+        tetris.GameLoop();
     }
     else if (strcmp(opzioni[selezione].c_str(), "Visualizza classifica") == 0){
+        
         clear();
         visualizza_classifica();
     }
 
 
     endwin();
-
-    return 0;
 
 }

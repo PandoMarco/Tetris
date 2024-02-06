@@ -1,7 +1,8 @@
-SOURCES=menu.cpp tetris.cpp tetramino.cpp visualizza_classifica.cpp
-EXECUTABLE=main
+SOURCES=main.cpp menu.cpp punteggio.cpp visualizza_classifica.cpp
+EXECUTABLE=tetris
 
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(SOURCES)
 	g++ $(SOURCES) -lncurses -o $(EXECUTABLE)
+
