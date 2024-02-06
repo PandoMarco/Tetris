@@ -1,6 +1,4 @@
-//
-// Created by puzzoz on 2/4/24.
-//
+
 #include "tetris.h"
 #include <ncurses.h>
 #include <iostream>
