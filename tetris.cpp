@@ -3,7 +3,9 @@
 #include <ncurses.h>
 #include <iostream>
 #include "visualizza_classifica.hpp"
-
+#include "visualizza_classifica.hpp"
+#include "punteggio.hpp"
+#include "menu.hpp"
 
 Tetris::Tetris(){
     // genera il primo tetramino
@@ -202,7 +204,41 @@ void Tetris::mettiPezzo(){
     Y=0;
     if(!prima_linea()){
         clear();
+        move(0,0);
+        printw("SCORE: %d", score);
+        int gameover[11][20]={
+                {0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1},
+                {1,0,0,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,0},
+                {1,0,1,1,0,1,1,1,1,0,1,0,1,0,1,0,1,1,1,0},
+                {1,1,1,1,0,1,0,0,1,0,1,0,0,0,1,0,1,1,1,1},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,0,1,1,1,0},
+                {1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,1},
+                {1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,1,1,1},
+                {1,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0,1,0,1,0},
+                {0,1,1,1,0,0,0,1,0,0,0,1,1,1,1,0,1,0,0,1}
+        };
+        for (int i = 0; i < 11; ++i) {
+            for (int j = 0; j < 20; ++j) {
+                if (gameover[i][j] != 0) {
+                    mvprintw((5+i), 5+(j*2), "[]");
+                }
+            }
+        }
+        refresh();
+        while(getch()!='q'){
+            //loop
+        }
+        //std::cout<<"gameover";
+        salva_punteggio(score);
+        clear();
         visualizza_classifica();
+        while(getch()!='q'){
+            //loop
+        }
+        clear();
+        menu();
     }
 }
 
