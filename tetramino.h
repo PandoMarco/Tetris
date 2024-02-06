@@ -1,6 +1,3 @@
-//
-// Created by puzzoz on 2/4/24.
-//
 
 #ifndef TETRIS_DEF_TETRAMINO_H
 #define TETRIS_DEF_TETRAMINO_H
