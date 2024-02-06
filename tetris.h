@@ -1,6 +1,4 @@
-//
-// Created by puzzoz on 2/3/24.
-//
+
 
 #ifndef TETRIS_DEF_TETRIS_H
 #define TETRIS_DEF_TETRIS_H
