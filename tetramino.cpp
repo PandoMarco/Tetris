@@ -1,6 +1,4 @@
-//
-// Created by puzzoz on 2/4/24.
-//
+
 
 #include "tetramino.h"
 #include <random>
