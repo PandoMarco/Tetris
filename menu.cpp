@@ -7,9 +7,12 @@ using namespace std;
 
 void menu(){
    // Avvio ncurses
-    initscr();
+   initscr();
     noecho();
     cbreak();
+    curs_set(0);
+    timeout(0);
+    keypad(stdscr, true);
 
     // dimensione dello schermo
     int yMax, xMax;
