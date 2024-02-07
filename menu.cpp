@@ -6,13 +6,10 @@
 using namespace std;
 
 void menu(){
-   /* AVVIO NCURSES */
+   // Avvio ncurses
     initscr();
     noecho();
     cbreak();
-    curs_set(0);
-    timeout(0);
-    keypad(stdscr, true);
 
     // dimensione dello schermo
     int yMax, xMax;
@@ -28,13 +25,13 @@ void menu(){
     // abilita l'uso delle frecce
     keypad(menu, true);
 
-    string opzioni[2] = {"Nuova partita", "Visualizza classifica"}; // scelte del menù
+    string opzioni[3] = {"Nuova partita", "Visualizza classifica", "Esci dal gioco"}; // scelte del menù
     int scelta;
     int selezione = 0;
 
     // evidenzia l'opzione selezionata
     while(true){
-        for(int i = 0; i < 2; i++){
+        for(int i = 0; i < 3; i++){
             if(i == selezione){
                 wattron(menu, A_REVERSE);
             }
@@ -51,8 +48,8 @@ void menu(){
                 break;
             case KEY_DOWN:
                 selezione++;
-                if(selezione == 2)
-                    selezione = 1;
+                if(selezione == 3)
+                    selezione = 2;
                 break;
             default:
                 break;
@@ -74,7 +71,11 @@ void menu(){
         clear();
         visualizza_classifica();
     }
-
+    else if (strcmp(opzioni[selezione].c_str(), "Esci dal gioco") == 0){
+        
+        endwin();
+        exit(0);
+    }
 
     endwin();
 
