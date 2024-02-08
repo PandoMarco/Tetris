@@ -67,6 +67,6 @@ Selezionando "Esci dal gioco" dal menù, si arresta l'esecuzione del programma.
 #-------------------Progetto per il corso di Programmazione,Informatica triennale 1°anno-------------------#
 #Autori (Nome Cognome Matricola):
 Elena Dattilo 0001114060
-Federico Manuel Semprini 
+Federico Manuel Semprini 0001128205
 Sara Negrini 0001113789
 Marco Pandolfi 0001114391
