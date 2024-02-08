@@ -227,7 +227,7 @@ void Tetris::mettiPezzo(){
                 }
             }
         }
-        printw("\n Premere q per ritornare al menu");
+        printw("\n Premere q per visualizzare la classifica");
         refresh();
         while(getch()!='q'){
             //loop
