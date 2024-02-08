@@ -206,7 +206,6 @@ void Tetris::mettiPezzo(){
         move(0,0);
         printw("SCORE: %d", score);        
         move(1,0);
-        printw("press q to exit");
         int gameover[11][20]={
                 {0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1},
                 {1,0,0,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,0},
@@ -227,7 +226,7 @@ void Tetris::mettiPezzo(){
                 }
             }
         }
-        printw("\n Premere q per visualizzare la classifica");
+        printw("\n     Premere q per visualizzare la classifica");
         refresh();
         while(getch()!='q'){
             //loop
