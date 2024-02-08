@@ -204,7 +204,9 @@ void Tetris::mettiPezzo(){
     if(!prima_linea()){
         clear();
         move(0,0);
-        printw("SCORE: %d", score);
+        printw("SCORE: %d", score);        
+        move(1,0);
+        printw("press q to exit");
         int gameover[11][20]={
                 {0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1},
                 {1,0,0,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,0},
