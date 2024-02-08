@@ -35,7 +35,6 @@ void Tetris::schermo() {
     printw("A and S to rotate");
     move(4,50);
     printw("down arrow to hard drop");
-
     move(4,30);
     printw("upnext");
     refresh();
@@ -226,6 +225,7 @@ void Tetris::mettiPezzo(){
                 }
             }
         }
+        printw("\n Premere q per ritornare al menu");
         refresh();
         while(getch()!='q'){
             //loop
