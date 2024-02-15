@@ -28,6 +28,8 @@ void visualizza_classifica() {
     }
 
     wgetch(win_classifica);
+    clear();
+    menu();
 
     endwin();
 }
