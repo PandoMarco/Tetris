@@ -3,7 +3,6 @@
 #include <cstring>
 #include "tetris.h"
 #include "visualizza_classifica.hpp"
-using namespace std;
 
 void menu(){
    // Avvio ncurses
