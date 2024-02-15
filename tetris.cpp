@@ -235,8 +235,7 @@ void Tetris::mettiPezzo(){
         salva_punteggio(score);
         clear();
         visualizza_classifica();
-        clear();
-        menu();
+       
     }
 }
 
