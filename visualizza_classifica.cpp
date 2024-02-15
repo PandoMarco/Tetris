@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include "visualizza_classifica.hpp"
+#include "menu.hpp"
 
 using std::getline;
 using std::ifstream;
