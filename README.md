@@ -65,8 +65,8 @@ Premendo "Q" si ritorna al menù.
 Selezionando "Esci dal gioco" dal menù, si arresta l'esecuzione del programma.
 
 #-------------------Progetto per il corso di Programmazione,Informatica triennale 1°anno-------------------#
-#Autori (Nome Cognome Matricola):
-Elena Dattilo 0001114060
-Federico Manuel Semprini 0001128205
-Sara Negrini 0001113789
-Marco Pandolfi 0001114391
+#Autori (Nome Cognome):
+Elena Dattilo
+Federico Manuel Semprini
+Sara Negrini
+Marco Pandolfi
